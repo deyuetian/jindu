@@ -1,0 +1,62 @@
+/* Loaded after the older workspace theme so component spacing stays authoritative. */
+.recruitment-page,.job-detail-view,.job-calendar-view,.announcement-detail{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:#283e36}
+.recruitment-page .recruitment-jobs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.opportunity-card{padding:22px 24px;border:1px solid #dfe7e2;border-radius:14px;box-shadow:0 2px 5px #203e2e03;min-width:0;transition:border-color .16s,box-shadow .16s}
+.opportunity-card:hover{border-color:#a8bdb0;box-shadow:0 5px 18px #203e2e08}
+.opportunity-top{display:flex;align-items:center;gap:12px;justify-content:space-between;min-height:24px}
+.opportunity-top .verdict{font-size:11px;padding:4px 8px}
+.opportunity-kind{color:#738077;font-size:11px;text-align:right}
+.opportunity-title{display:flex;width:100%;align-items:center;gap:12px;padding:15px 0 7px;text-align:left;justify-content:space-between}
+.opportunity-title h3{color:#213f33;font-size:19px;line-height:1.5;font-weight:650;letter-spacing:0;overflow-wrap:anywhere}
+.opportunity-title svg{flex-shrink:0;color:#6f8c7d}
+.opportunity-company{font-size:13px;line-height:1.7;color:#4e6359;overflow-wrap:anywhere}
+.opportunity-region{display:flex;gap:5px;align-items:center;flex-wrap:wrap;font-size:12px;line-height:1.6;color:#697e72;margin-top:5px}
+.opportunity-region>span{border-left:1px solid #dbe4de;margin-left:8px;padding-left:12px}
+.opportunity-source{display:flex;align-items:baseline;gap:8px;text-align:left;font-size:12px;line-height:1.65;color:#537764;padding:0;margin-top:10px;overflow-wrap:anywhere;white-space:normal}
+.opportunity-source>span{font-size:10px;color:#7a877f;flex-shrink:0}
+.opportunity-source:hover{color:#204e39}.opportunity-source:disabled{opacity:1;cursor:default}
+.opportunity-requirement{display:flex;gap:16px;margin-top:18px;padding:13px 0;border-top:1px solid #edf0ed;align-items:baseline}
+.opportunity-requirement>span{color:#7b8980;font-size:11px;white-space:nowrap}
+.opportunity-requirement p{font-size:13px;line-height:1.7;color:#304e3f;overflow-wrap:anywhere;min-width:0}
+.opportunity-qualification{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:11px;color:#758078;line-height:1.7}
+.opportunity-qualification>button{font-size:11px;color:#386950;padding:2px 0;margin-left:auto}
+.status-dot{width:5px;height:5px;border-radius:50%;background:#91a2b0}.status-dot.met{background:#68a183}.status-dot.unmet{background:#c9836e}
+.opportunity-actions{display:flex;gap:12px;align-items:center;justify-content:space-between;border-top:1px solid #edf0ed;padding-top:15px;margin-top:13px}
+.intent-button,.calendar-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;min-height:38px;font-size:12px;line-height:1.3;border-radius:7px;border:1px solid #d7e1db;color:#3d6450;background:#fff;white-space:nowrap}
+.intent-button:hover{background:#f0f6f2}.intent-button.selected{background:#e7f1eb;border-color:#b7cfc0;color:#245c3e}
+.calendar-button{background:#325e48;border-color:#325e48;color:white}.calendar-button:hover{background:#254c38}
+dialog.wide:has(.job-detail-view),dialog.wide:has(.job-calendar-view){max-width:min(900px,calc(100% - 24px))}
+.job-detail-header{border-bottom:1px solid #e5ece7;padding:0 0 21px}
+.job-detail-kicker{display:flex;gap:10px;align-items:center;font-size:11px;color:#6b7d72;margin-bottom:12px}
+.job-detail-kicker>span:first-child{background:#edf5ef;color:#38664c;border-radius:4px;padding:3px 7px}
+.job-detail-header h3{font-size:25px;line-height:1.45;font-weight:650;color:#203e30;margin:0 0 8px}
+.job-detail-header>p{font-size:13px;line-height:1.7;color:#6a7e70}
+.job-detail-major{display:flex;gap:16px;align-items:baseline;font-size:13px;line-height:1.7;margin-top:15px}.job-detail-major>span{color:#8a958e;white-space:nowrap;font-size:11px}.job-detail-major strong{font-weight:500;min-width:0;overflow-wrap:anywhere}
+.job-detail-actions{display:flex;gap:10px;padding:17px 0 0}
+.job-detail-view .detail-tabs{margin-top:16px;gap:28px}.job-detail-view .detail-tabs button{font-size:13px;padding:14px 0}
+.job-detail-content{padding-top:22px;min-height:280px}.job-detail-content .application-panel{padding:0;border:0;background:transparent}
+.job-progress-form{max-width:640px;display:grid;gap:18px}.job-progress-form label{display:grid;gap:8px;font-size:13px}.job-progress-form>div{display:flex;align-items:center;gap:24px}
+.eligibility-panel .eligibility-heading{margin-bottom:13px}.eligibility-panel .eligibility-heading h3{font-size:14px}.eligibility-panel .eligibility-heading>span{font-size:11px}
+.qualification-major{background:#f5f8f5;border:0;border-radius:9px;padding:15px 17px;margin-bottom:18px;font-size:13px;line-height:1.65}
+.qualification-major>p{margin:7px 0;color:#395546;overflow-wrap:anywhere}.qualification-major .eligibility-line{align-items:center}
+.compact-qualifications{gap:0;border-top:1px solid #e1e8e2}
+.compact-qualifications .qualification-group{border:0;border-bottom:1px solid #e1e8e2;border-radius:0;background:none;overflow:visible}
+.compact-qualifications .qualification-group>summary{background:none;padding:14px 2px;gap:12px;list-style:none}
+.compact-qualifications .qualification-group-title{flex:1;min-width:0}.compact-qualifications .qualification-group-title strong{font-size:13px;color:#304d3e;font-weight:600}
+.compact-qualifications .qualification-group-title small{font-size:12px;line-height:1.7;color:#829085;margin-top:3px;font-weight:400}
+.compact-qualifications .qualification-group>summary>svg{color:#92a094;flex-shrink:0;transition:transform .15s}
+.compact-qualifications .qualification-group[open]>summary>svg{transform:rotate(180deg)}
+.compact-qualifications .qualification-group-body{padding:0 0 6px 13px;border-left:2px solid #dce9df;margin:0 0 14px 1px}
+.qualification-row{padding:9px 0 12px;background:none;border:0;font-size:13px;line-height:1.7;overflow-wrap:anywhere}.qualification-row+.qualification-row{border-top:1px dashed #e5eae6}
+.qualification-row-heading{display:flex;align-items:flex-start;gap:12px;justify-content:space-between}.qualification-row-heading strong{font-size:13px;font-weight:500;color:#344e41}
+.qualification-comparison{display:flex;gap:14px;font-size:12px;margin-top:7px;color:#657b6c}.qualification-comparison>span{color:#95a095;flex-shrink:0}.qualification-comparison p{margin:0}
+.qualification-reason{margin-top:5px;font-size:12px;color:#917449}
+.qualification-evidence{margin-top:8px;font-size:11px;color:#6d8372}.qualification-evidence>summary{cursor:pointer}.qualification-evidence blockquote{margin:10px 0 0;padding:10px 13px;border-left:2px solid #c1d5c6;background:#f6f8f4;font-size:12px;line-height:1.8;color:#65785f;white-space:pre-wrap;overflow-wrap:anywhere}
+.qualification-evidence>p{font-size:12px;line-height:1.8;margin:9px 0}.qualification-evidence .application-education{margin:9px 0;gap:8px}.qualification-evidence .application-education>span{font-size:12px;padding:8px 11px}
+.calendar-import-heading{display:flex;align-items:flex-start;gap:15px;border-bottom:1px solid #e2ebe4;padding-bottom:20px;margin-bottom:20px}.calendar-import-heading>svg{color:#587b63;flex-shrink:0;margin-top:4px}.calendar-import-heading span{font-size:11px;color:#8a988b}.calendar-import-heading h3{font-size:20px;line-height:1.55;font-weight:600;margin-top:4px}
+.calendar-import-caption{font-size:12px;line-height:1.7;color:#7c8c7e;margin:13px 0}
+.calendar-import-list{border:1px solid #e0e8e1;border-radius:10px;overflow:hidden}.calendar-import-list>label{display:flex;align-items:center;gap:14px;padding:16px;cursor:pointer;margin:0;background:#fcfdfb}.calendar-import-list>label+label{border-top:1px solid #e6ece6}.calendar-import-list input,.calendar-follow input{height:17px;width:17px;min-height:17px;accent-color:#356d4e;flex-shrink:0;margin:0}.calendar-import-list label>span{min-width:0}.calendar-import-list strong{display:block;font-size:13px;line-height:1.6;font-weight:500;color:#385141;overflow-wrap:anywhere}.calendar-import-list small{display:block;font-size:12px;color:#7d8d7c;margin-top:4px;font-variant-numeric:tabular-nums}
+.calendar-follow{display:flex;flex-direction:row;align-items:center;gap:10px;font-size:13px;color:#4e6c56;margin:20px 0 0}.calendar-import-success{display:flex;align-items:center;gap:15px;border-radius:10px;background:#f0f6ef;padding:20px;margin:20px 0;color:#44704d}.calendar-import-success p{margin-top:5px;color:#7d8c76;font-size:12px}.calendar-import-empty{text-align:center;padding:25px 10px;color:#71836c}.calendar-import-empty h4{margin:13px 0 9px;font-size:17px}.calendar-import-empty p{font-size:13px;margin-bottom:20px}
+@media(max-width:1080px){.recruitment-page .recruitment-jobs{grid-template-columns:1fr}.opportunity-card{padding:20px 22px}.opportunity-title h3{font-size:18px}}
+@media(max-width:600px){.opportunity-card{padding:18px;border-radius:11px}.opportunity-top{gap:6px}.opportunity-title h3{font-size:18px}.opportunity-title{padding-top:12px}.opportunity-company{font-size:12px}.opportunity-source{font-size:12px}.opportunity-requirement{gap:12px;margin-top:13px;padding:10px 0}.opportunity-actions{margin-top:10px;padding-top:12px}.intent-button,.calendar-button{font-size:12px;min-height:42px}.recruitment-toolbar .tabs{flex-wrap:wrap;gap:4px}.recruitment-toolbar .tabs button{padding:8px 10px;font-size:12px}.job-detail-header h3{font-size:22px}.job-detail-header{padding-bottom:15px}.job-detail-major{gap:12px}.job-detail-content{padding-top:18px}.qualification-major{padding:13px}.compact-qualifications .qualification-group>summary{gap:8px;padding:12px 0}.qualification-comparison{gap:10px}.qualification-row-heading .verdict{font-size:10px}.calendar-import-heading h3{font-size:18px}.calendar-import-list>label{padding:13px;gap:10px}.calendar-import-list strong{font-size:12px}.calendar-import-heading{gap:11px}.job-progress-form textarea,.job-progress-form select{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.opportunity-card,.compact-qualifications .qualification-group>summary>svg{transition:none}}

@@ -1,0 +1,63 @@
+.announcement-detail{color:#304d3c}
+.announcement-hero{padding:24px;border:1px solid #e4ebe1;border-radius:14px;background:linear-gradient(120deg,#f3f7f0,#fafcf8);margin-bottom:8px}
+.announcement-hero .detail-title{font-size:25px;line-height:1.45;letter-spacing:-.4px;margin:15px 0 18px;font-weight:650}
+.announcement-detail .detail-tabs{gap:26px;margin-top:20px;overflow-x:auto;scrollbar-width:thin}
+.announcement-detail .detail-tabs button{white-space:nowrap;font-size:14px;min-height:47px}
+.announcement-detail .detail-tab-content{padding-top:24px;min-height:240px}
+.announcement-detail .detail-summary{font-size:15px;line-height:1.95;max-width:76ch;color:#415c4c;margin:0}
+.announcement-detail .detail-overview-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:25px 0}
+.announcement-detail .detail-overview-grid button{padding:18px 16px;gap:9px 12px;border-color:#e1e9df;background:#fbfcf9;box-shadow:none;transition:background .15s,border-color .15s}
+.announcement-detail .detail-overview-grid button:hover{background:#f0f6ec;border-color:#a6baa0}
+.announcement-detail .detail-overview-grid strong{font-size:15px;line-height:1.55;font-weight:600}
+.announcement-detail .detail-overview-grid span{font-size:12px;line-height:1.6;color:#74866e}
+.announcement-detail .detail-uncertainties{background:#fbfaf4;border:1px solid #ebe6d6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.announcement-detail .detail-uncertainties summary{font-size:13px;color:#7b704f}
+.announcement-detail .detail-uncertainties ul{font-size:13px;line-height:1.85;padding-left:20px;margin:14px 0 2px}
+.detail-section-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 16px}
+.detail-section-heading h4{margin:5px 0 0;font-size:18px;line-height:1.5;color:#294932;font-weight:650}
+.detail-section-heading>span{font-size:12px;color:#86927f}
+.detail-eyebrow{font-size:11px;letter-spacing:1px;color:#849274}
+.detail-count{font-size:12px;padding:2px 8px;background:#edf3e8;color:#637953;border-radius:20px;margin-left:5px;vertical-align:middle}
+.detail-common{margin-bottom:30px;padding-bottom:24px;border-bottom:1px solid #e5ebdf}
+.qualification-groups{display:grid;gap:8px}
+.qualification-group{border:1px solid #e4eade;border-radius:10px;background:white;overflow:hidden}
+.qualification-group>summary{display:flex;gap:15px;align-items:center;justify-content:space-between;list-style:none;cursor:pointer;padding:14px 16px;font-size:13px;background:#fafcf7}
+.qualification-group>summary strong{font-weight:550;line-height:1.65}
+.qualification-group>summary small{display:block;font-size:11px;color:#849078;font-weight:400;margin-top:4px}
+.qualification-group-body{padding:8px 16px 14px}
+.qualification-group .eligibility-item{padding:12px 0;border-radius:0;background:transparent}
+.qualification-group .eligibility-item+.eligibility-item{border-top:1px solid #eaf0e3}
+.detail-job-accordion{border:1px solid #dfe7d8;border-radius:11px;background:white;margin:0 0 10px;overflow:hidden}
+.detail-job-accordion>summary{padding:17px 18px;display:flex;gap:14px;align-items:center;cursor:pointer;list-style:none;background:#fafcf8}
+.detail-job-accordion>summary::-webkit-details-marker,.qualification-group>summary::-webkit-details-marker{display:none}
+.detail-job-accordion>summary>div{flex:1;min-width:0}
+.detail-job-accordion>summary>strong{flex:1;font-size:14px}
+.detail-job-accordion>summary h4{font-size:15px;line-height:1.6;margin:0;font-weight:600;color:#2a4834}
+.detail-job-accordion>summary p{font-size:12px;line-height:1.6;margin:5px 0 0;color:#7c8a73}
+.detail-job-accordion>summary>svg{flex-shrink:0;transition:transform .15s;color:#8ca37d}
+.detail-job-accordion[open]>summary>svg{transform:rotate(180deg)}
+.detail-job-accordion[open]>summary{border-bottom:1px solid #e4ebdd;background:#f2f7ed}
+.detail-job-body{padding:18px}
+.detail-job-body .eligibility-panel,.detail-job-body .application-panel{border:0;padding:0;margin:18px 0;background:transparent}
+.detail-job-body .eligibility-heading h3{font-size:15px}
+.detail-job-body .eligibility-heading{margin-bottom:12px}
+.detail-process-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.detail-process-grid>section>h4{font-size:14px;color:#6b7f60;margin:0 0 12px}
+.detail-process-grid .application-item{border:1px solid #e1e8da;border-radius:10px;padding:17px;background:#fbfcf9;margin:0}
+.detail-process-grid .application-items{display:grid;gap:12px}
+.detail-process-grid .application-item strong{font-size:14px;font-weight:600}
+.detail-process-grid .application-item p{font-size:13px;line-height:1.8}
+.detail-process-grid .application-meta{font-size:12px;line-height:1.7}
+.detail-process-grid details{font-size:12px;margin-top:10px}
+.announcement-detail .detail-footer{margin-top:26px;padding-top:20px}
+.job-source-announcement.text-btn{font-size:12px;color:#738365;line-height:1.65;text-align:left;margin:0 0 12px;padding:0;font-weight:400;overflow-wrap:anywhere}
+.job-source-announcement.text-btn::before{content:'来源';border:1px solid #e5e9df;border-radius:4px;font-size:10px;padding:1px 4px;margin-right:7px;flex-shrink:0}
+.announcement-detail summary:focus-visible,.announcement-detail button:focus-visible{outline:2px solid #547b43;outline-offset:3px}
+@media(max-width:700px){
+ .announcement-hero{padding:18px 16px;border-radius:11px}.announcement-hero .detail-title{font-size:20px;line-height:1.5;margin:12px 0}
+ .announcement-detail .detail-tabs{gap:20px}.announcement-detail .detail-tabs button{font-size:13px}
+ .announcement-detail .detail-summary{font-size:14px}.announcement-detail .detail-overview-grid{grid-template-columns:1fr;gap:8px;margin:20px 0}
+ .announcement-detail .detail-overview-grid button{display:grid;grid-template-columns:25px 1fr;padding:13px 16px;gap:3px 12px}.announcement-detail .detail-overview-grid button>svg{grid-row:1/3;align-self:center}
+ .detail-process-grid{grid-template-columns:1fr;gap:20px}.detail-job-accordion>summary{padding:14px;gap:8px;flex-wrap:wrap}.detail-job-accordion>summary>div{flex-basis:calc(100% - 28px)}.detail-job-accordion>summary>.verdict{order:3}.detail-job-body{padding:14px}
+ .detail-section-heading h4{font-size:16px}.detail-section-heading{gap:8px}.qualification-group>summary{padding:12px}.qualification-group-body{padding:4px 12px 10px}
+}

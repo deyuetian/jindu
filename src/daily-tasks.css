@@ -1,0 +1,63 @@
+.daily-page{max-width:1080px}
+.daily-intro{margin:-12px 0 24px;color:var(--muted);font-size:14px}
+.daily-checklist{overflow:visible}
+.daily-date-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 30px 24px}
+.daily-date-title{display:flex;align-items:center;justify-content:space-between;gap:20px;min-width:0}
+.daily-date-title>div>span{display:block;color:var(--green);font-size:12px;font-weight:600;margin-bottom:6px}
+.daily-date-title h2{font-size:23px;line-height:1.4;margin:0;white-space:nowrap}
+.daily-date-title h2 small{margin-left:10px;color:var(--muted);font-size:13px;font-weight:400}
+.daily-date-controls{display:grid;grid-template-columns:36px 172px 36px;gap:6px;align-items:start}
+.daily-date-controls .icon-btn{height:42px;width:36px}
+.daily-date-controls .icon-btn:disabled{opacity:.35;cursor:default}
+.daily-date-controls .date-input>input[type=text]{background:#fff;font-size:14px;min-height:42px;padding-left:11px}
+.daily-progress{margin:0 30px 16px;padding:20px 22px;border:1px solid #ddebe3;border-radius:12px;background:#f1f7f3}
+.daily-progress>div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;color:#557365;margin-bottom:13px}
+.daily-progress strong{font-size:24px;color:#205741;font-variant-numeric:tabular-nums;margin:0 3px;font-weight:650}
+.daily-progress progress{appearance:none;display:block;width:100%;height:6px;border:0;border-radius:6px;overflow:hidden;background:#dce8e0;color:#397d5b}
+.daily-progress progress::-webkit-progress-bar{background:#dce8e0;border-radius:6px}
+.daily-progress progress::-webkit-progress-value{background:#397d5b;border-radius:6px}
+.daily-progress progress::-moz-progress-bar{background:#397d5b;border-radius:6px}
+.daily-task-section{padding:16px 30px 8px}
+.daily-task-section:last-child{padding-bottom:26px}
+.daily-list-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 2px 12px}
+.daily-list-heading h3{font-size:14px;font-weight:600;margin:0}
+.daily-list-heading h3 span{color:#8b9b91;font-weight:400;font-size:12px;margin-left:9px;font-variant-numeric:tabular-nums}
+.daily-list-heading>span{font-size:12px;color:#809086}
+.daily-task-list{list-style:none;padding:0;margin:0}
+.daily-task-row{display:flex;align-items:center;gap:16px;min-height:86px;padding:16px 2px;border-top:1px solid var(--line)}
+.daily-task-check{flex:0 0 36px;width:36px;height:36px;border:1px solid #b4cabd;border-radius:10px;background:white;display:grid;place-items:center;color:white;transition:background .15s,border-color .15s}
+.daily-task-check:hover{background:#eff6f1;border-color:#4d8b69}
+.daily-task-check:disabled{opacity:.6;cursor:wait}
+.daily-task-check:focus-visible,.daily-task-content:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.daily-task-content{flex:1;min-width:0;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:0}
+.daily-task-content strong{font-size:16px;line-height:1.65;color:#284a3c;font-weight:550;overflow-wrap:anywhere}
+.daily-task-content>span{display:flex;gap:12px;align-items:center;font-size:12px;color:#7c8d82}
+.daily-task-priority{font-size:11px;color:#996434;background:#faf2e7;padding:1px 6px;border-radius:4px}
+.daily-task-time{flex-shrink:0;color:#617b6c;font-variant-numeric:tabular-nums;font-size:13px}
+.daily-task-row.is-done .daily-task-check{background:#397d5b;border-color:#397d5b}
+.daily-task-row.is-done .daily-task-content strong{color:#85978a;text-decoration:line-through;text-decoration-thickness:1px}
+.daily-task-row.is-done .daily-task-time{color:#94a399}
+.daily-completed{background:#fbfcfb;border-radius:0 0 14px 14px;margin-top:6px;padding-top:22px}
+.daily-all-done{display:flex;align-items:center;gap:12px;padding:22px 2px;color:#357455;font-size:14px;border-top:1px solid var(--line)}
+.daily-empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding:45px 24px 52px;color:#5f806c}
+.daily-empty>svg{margin-bottom:20px}
+.daily-empty h3{font-size:17px;color:#365a45;margin:0 0 10px}
+.daily-empty p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 24px;max-width:360px}
+.daily-footnote{font-size:12px;color:#829287;line-height:1.9;margin:18px 4px}
+@media(max-width:1000px){.daily-date-bar{flex-wrap:wrap;gap:18px}.daily-date-title{flex:1}.daily-date-controls{margin-left:auto}}
+@media(max-width:600px){
+  .daily-intro{font-size:13px;margin:-8px 0 19px}
+  .daily-date-bar{padding:20px 16px;gap:18px;display:block}
+  .daily-date-title{width:100%;margin-bottom:17px;gap:10px}
+  .daily-date-title h2{font-size:20px}.daily-date-title h2 small{font-size:12px;margin-left:7px}
+  .daily-date-title .text-btn{font-size:12px;white-space:nowrap}
+  .daily-date-controls{grid-template-columns:36px minmax(0,1fr) 36px;width:100%;margin:0;gap:4px}
+  .daily-date-controls .date-input>input[type=text]{font-size:16px}
+  .daily-progress{margin:0 16px 12px;padding:15px 16px}
+  .daily-progress>div{font-size:12px}.daily-progress strong{font-size:22px}
+  .daily-task-section{padding:16px 16px 8px}.daily-task-section:last-child{padding-bottom:20px}
+  .daily-task-row{gap:12px;min-height:82px}.daily-task-content strong{font-size:14px}
+  .daily-task-time{font-size:12px}.daily-task-content>span{font-size:11px;gap:8px}
+  .daily-empty{padding:32px 20px 38px}.daily-empty h3{font-size:15px}
+  .daily-completed{padding-top:20px}.daily-footnote{font-size:11px}
+}

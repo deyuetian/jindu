@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {eligibilityFactsSchema,eligibilityGroupsSchema,evaluateEligibility} from '../../shared/eligibility.ts';
+import {placeOptions} from '../../shared/location-filter.ts';
+import {createViewState} from '../../src/view-state.ts';
+import {moveNavigationItem,normalizeNavigationOrder} from '../../src/navigation-order.ts';
+const evidence='仅限女性报考';
+const groups=eligibilityGroupsSchema.parse([{label:'性别',mode:'all',evidence,criteria:[{kind:'gender',label:'性别',evidence,accepted:['女']}]}]);
+assert.equal(eligibilityFactsSchema.parse({}).gender,'');
+assert.equal(evaluateEligibility(groups,{gender:'女'},evidence).status,'met');
+assert.equal(evaluateEligibility(groups,{gender:'男'},evidence).status,'unmet');
+assert.equal(evaluateEligibility(groups,{},evidence).status,'missing');
+assert.deepEqual(placeOptions([[{province:'湖北省',city:'宜昌市'},{province:'湖北省',city:'荆州市'},{province:'全国',city:''},{province:'北京市',city:'北京市'}]]).map(p=>[p.province,p.cities]),[['全国',[]],['北京市',['北京市']],['湖北省',['荆州市','宜昌市']]]);
+const values=new Map(),disk={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v),removeItem:k=>values.delete(k)};
+const store=createViewState(disk);store.set('jobs:page',3);assert.equal(createViewState(disk).get('jobs:page',1),3);store.clear();assert.equal(createViewState(disk).get('jobs:page',1),1);
+assert.deepEqual(moveNavigationItem(['overview','agent','jobs'],'jobs','overview'),['jobs','overview','agent']);
+assert.deepEqual(normalizeNavigationOrder(['jobs','jobs','old'],['overview','agent','jobs']),['jobs','overview','agent']);
+console.log('CHECK_WORKSPACE=PASS');

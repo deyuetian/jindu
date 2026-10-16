@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 私密报告安全问题
+    url: https://github.com/deyuetian/jindu/security/advisories/new
+    about: 不要在普通 Issue 中公开漏洞或凭据。
